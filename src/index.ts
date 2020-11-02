@@ -1,10 +1,11 @@
 import express from 'express'
+import path from 'path'
 
 const app = express()
 
-app.get('/', (request, response) => {
-  return response.json({ message: 'Hello World' })
-})
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'public')))
+}
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
