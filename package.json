@@ -7,7 +7,6 @@
   "scripts": {
     "build:client": "rm -rf ./dist && npm run build --prefix ./client && mkdir dist && mv ./client/build ./dist/public",
     "build:server": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "build": "npm run build:client && npm run build:server",
     "start": "NODE_ENV=production node dist/index.js",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "dev:client": "npm start --prefix ./client",
