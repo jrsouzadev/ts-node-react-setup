@@ -4,9 +4,14 @@ import path from 'path'
 import { User } from './models/user'
 
 const app = express()
+
 console.log(process.env.NODE_ENV)
+const publicFolder = path.join(__dirname, 'public')
+console.log(__dirname, publicFolder)
+
+console.log()
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'public')))
+  app.use(express.static(publicFolder))
 }
 
 const PORT = process.env.PORT || 5000
