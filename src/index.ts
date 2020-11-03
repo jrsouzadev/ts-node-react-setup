@@ -12,9 +12,6 @@ console.log(__dirname, publicFolder)
 console.log()
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(publicFolder))
-  app.get('*', (request, response) => {
-    response.sendFile(path.join(publicFolder, 'index.html'))
-  })
 }
 
 const PORT = process.env.PORT || 5000
