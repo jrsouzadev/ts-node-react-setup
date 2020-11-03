@@ -1,11 +1,8 @@
 import express from 'express'
 import path from 'path'
-// eslint-disable-next-line no-unused-vars
-import { User } from './models/user'
 
 const app = express()
 
-console.log(process.env.NODE_ENV)
 const publicFolder = path.join(__dirname, 'public')
 console.log(__dirname, publicFolder)
 
