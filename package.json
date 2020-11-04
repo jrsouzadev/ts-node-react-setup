@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build:client": "npm run build --prefix ./client",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-prebuild": "cd client && npm install && npm run build && cd ..",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "NODE_ENV=production node dist/index.js",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
