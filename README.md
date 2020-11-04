@@ -29,17 +29,22 @@ Run tests with Jest
 BUILD
 
 npm run build:client
-This command will build the client folder prior to building the app, and moving the build folder to main distribution folder
+This command will build the client folder
+CRA was ejected and teaked so the client will be built in dist/public
 
-npm run build:server
+npm run build
 This will build the server after the client is done
+
+
+START
+
+npm run start
+client must be built for distribution
+will start node in dist/index.js in production mode
 
 
 DEPLOY
 
-Can be deployed easily into Heroku, for instance. Build first, then deploy
-npm run build:client && npm run build:server && git add . && git commit -a && git push heroku master
-
-
-// ISSUES:
-- To preserve create-react-app settings and avoid ejecting, build:client command erases dist folder, bundles client in it's folder then creates a new empty /dist and moves build there as dist/public. I could not get Heroku to comply with this, probably because
+Can be deployed easily into Heroku, for instance
+heroku-prebuild command will build the client for you once in their server
+git add . && git commit -a && git push heroku master
