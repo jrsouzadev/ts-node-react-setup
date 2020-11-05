@@ -1,4 +1,4 @@
-<h1>Full Stack App Setup (Typescript, Node and React)</h1>
+<h1>Full Stack App Setup<br>(Typescript, Node and React)</h1>
 by João Ricardo de Souza, October 2020<br>
 Using create-react-app for client and node-typescript-structure by Rocketseat<br>
 (https://github.com/rocketseat-content/node-typescript-structure)<br><br>
