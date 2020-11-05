@@ -13,7 +13,7 @@ Stack:
 - ESLint
 - Jest
 
-run <code>npm install && cd client && npm install</code> to add dependencies and it's ready for development
+Run <code>npm install && cd client && npm install</code> to add dependencies and it's ready for development
 
 
 <b>DEVELOP</b>
@@ -43,12 +43,12 @@ This will build the server after the client is done
 <b>START</b>
 
 <code>npm run start</code><br>
-client must be built for distribution<br>
-will start node in dist/index.js in production mode
+Client must be built for distribution<br>
+Will start node in dist/index.js in production mode
 
 
 <b>DEPLOY</b>
 
 Can be deployed easily into Heroku, for instance<br>
-heroku-prebuild command will build the client automatically for you once in their server<br>
+<code>heroku-prebuild</code> command will build the client automatically for you once in their server<br>
 <code>git add . && git commit -a && git push heroku master</code>
