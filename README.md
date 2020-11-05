@@ -1,4 +1,4 @@
-MERN Stack App Setup by João Ricardo de Souza, October 2020
+Full Stack App Setup by João Ricardo de Souza, October 2020
 Using create-react-app for client and node-typescript-structure by Rocketseat (https://github.com/rocketseat-content/node-typescript-structure)
 
 Stack:
@@ -6,6 +6,7 @@ Stack:
 - Node
 - Express
 - React (create-react-app)
+- Socket IO
 - Babel
 - ESLint
 - Jest
