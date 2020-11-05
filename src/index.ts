@@ -25,7 +25,7 @@ class Server implements IServer {
       this._app.use(express.static(this.publicFolder))
     }
 
-    this._server = http.createServer(this._app);
+    this._server = http.createServer(this._app)
     if (!this._server) throw new Error('Server could not initialize. Is \'http\' in scope?')
 
     this._io = socketio(this._server)
