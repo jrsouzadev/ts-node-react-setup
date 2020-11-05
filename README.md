@@ -30,8 +30,8 @@ Run tests with Jest
 BUILD
 
 npm run build:client
-This command will build the client folder
-CRA was ejected and teaked so the client will be built in dist/public
+This command will build the client folder<br>
+CRA was ejected and tweaked so the client will be built in dist/public
 
 npm run build
 This will build the server after the client is done
