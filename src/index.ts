@@ -12,7 +12,7 @@ class Server implements IServer {
   private readonly _server: http.Server;
   private readonly _io: socketio.Server;
 
-  constructor(
+  constructor (
     private readonly publicFolder: string,
     private readonly _port = process.env.PORT || 5000
   ) {
