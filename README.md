@@ -1,4 +1,5 @@
-Full Stack App Setup by João Ricardo de Souza, October 2020<br>
+<h1>Full Stack App Setup by João Ricardo de Souza</h1><br>
+October 2020<br>
 Using create-react-app for client and node-typescript-structure by Rocketseat<br>
 (https://github.com/rocketseat-content/node-typescript-structure)
 
@@ -12,40 +13,42 @@ Stack:
 - ESLint
 - Jest
 
+run <code>npm install && cd client && npm install</code> to add dependencies and it's ready for development
 
-DEVELOP
 
-npm run dev:server (server)<br>
-npm run dev:client (client)<br>
-npm run dev (both)<br>
+<b>DEVELOP</b>
+
+<code>npm run dev:server (server)</code><br>
+<code>npm run dev:client (client)</code><br>
+<code>npm run dev (both)</code><br>
 When not in production, server will not serve static assets
 
 
-TEST
+<b>TEST</b>
 
-npm run test<br>
+<code>npm run test</code><br>
 Run tests with Jest
 
 
-BUILD
+<b>BUILD</b>
 
-npm run build:client<br>
+<code>npm run build:client</code><br>
 This command will build the client folder<br>
 CRA was ejected and tweaked so the client will be built in dist/public
 
-npm run build<br>
+<code>npm run build</code><br>
 This will build the server after the client is done
 
 
-START
+<b>START</b>
 
-npm run start<br>
+<code>npm run start</code><br>
 client must be built for distribution<br>
 will start node in dist/index.js in production mode
 
 
-DEPLOY
+<b>DEPLOY</b>
 
 Can be deployed easily into Heroku, for instance<br>
 heroku-prebuild command will build the client automatically for you once in their server<br>
-git add . && git commit -a && git push heroku master
+<code>git add . && git commit -a && git push heroku master</code>
