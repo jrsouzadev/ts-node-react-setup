@@ -3,7 +3,11 @@ import path from 'path'
 import http from 'http'
 import socketio from 'socket.io'
 
-class Server {
+interface IServer {
+  listen (): void
+}
+
+class Server implements IServer {
   private readonly _app: express.Application;
   private readonly _server: http.Server;
   private readonly _io: socketio.Server;
@@ -35,7 +39,7 @@ class Server {
     })
   }
 
-  listen() {
+  listen (): void {
     this._server.listen(this._port, () => {
       console.log(`Server running on port ${this._port}`)
     })
